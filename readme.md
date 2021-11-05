@@ -28,7 +28,7 @@ const elias = {
 };
 ```
 
-[![Elias's GitHub stats](https://github-readme-stats.vercel.app/api?username=Galeano-Elias)](https://github.com/Galeano-Elias/github-readme-stats)
+[![Elias's GitHub stats](https://github-readme-stats.vercel.app/api?username=galeanoelias)](https://github.com/galeanoelias/github-readme-stats)
 
 - **You can contact me 🌎🇦🇷**:
 - [Linkedin](https://www.linkedin.com/in/elias-david-galeano)
