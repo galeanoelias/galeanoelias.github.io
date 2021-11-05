@@ -1,0 +1,16 @@
+/* Color variables */
+
+:root {
+    --lightblack: #252525;
+    --purple: #6930C3;
+    --bluishgreen: #64DFDF;
+    --bluishgreen2: #80FFDB;
+}
+
+/* letters variables */
+
+:root {
+    --noto: 'Noto Serif', serif;
+    --dancing: 'Dancing Script', cursive;
+    --averia: 'Averia Sans Libre', cursive;
+}
