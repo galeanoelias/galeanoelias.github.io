@@ -34,7 +34,13 @@
 }
 
 .nav__header {
+    position: absolute;
+    height: 90vh;
+    width: 100vw;
+    top: 10%;
     background: var(--purple);
+    left: -100%;
+    transition: all .5s;
 }
 
 .ul__flex .contain-li {
@@ -60,4 +66,12 @@
     padding: 0 10px;
     color: var(--lightblack);
     font-size: 30px;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .nav__header {
+    left: 0;
 }
