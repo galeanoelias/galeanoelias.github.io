@@ -1,0 +1,7 @@
+.footer-flex {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-flow: column wrap;
+    background: var(--lightblack);
+}
