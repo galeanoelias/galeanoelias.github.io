@@ -92,11 +92,11 @@
 @media only screen and (min-width:768px) and (max-width:1023px){
 
     .contain-header .name-header {
-        font-size: 4em;
+        font-size: 3em;
     }
 
     .ul__flex .checkbtn {
-        font-size: 3em;
+        font-size: 2em;
     }
 
     .ul__flex .contain-li {
