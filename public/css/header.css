@@ -3,21 +3,19 @@
 }
 
 .header {
-    width: 100vw;
-    height: 10vh;
+    width: 2em;
+    height: 100vh;
+    position: fixed;
+    z-index: 200;
 }
 
 .contain-header {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    position: fixed;
     width: 100%;
-    height: 10%;
+    height: 100%;
+    z-index: 100;
 }
 
-.contain-header .name-header {
+/* .contain-header .name-header {
     display: block;
     width: 100vw;
     font-size: 28px;
@@ -27,22 +25,29 @@
     margin: 0 auto;
     padding: 10px 0;
     background: linear-gradient(-45deg, #6930C3, #64DFDF, #252525);
-}
+} */
 
 .ul__flex {
-    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     position: absolute;
     font-size: 22px;
-    color: var(--lightblack);
+    justify-content: flex-end;
 }
 
 .ul__flex .checkbtn {
-    display: block;
-    margin: 14px 0;
-    padding: 0 15px;
-    float: right;
-    font-size: 22px;
+    display: inline-block;
+    padding: 12em 0.5em;
+    background: linear-gradient(45deg, #64DFDF, #6930c3);
     color: var(--lightblack);
+    z-index: 150;
+}
+
+.ul__flex .checkbtn .fa-bars {
+    display: none;
 }
 
 #check {
@@ -53,13 +58,13 @@
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    width: 100vw;
-    height: 100vh;
+    width: 13.1em;
+    height: 100%;
     position: relative;
     background: var(--lightblack);
-    top: -1000px;
+    left: -1000px;
     transition: all 1s;
-    z-index: -1;
+    justify-content: space-evenly;
 }
 
 .contain-li .li__flex {
@@ -85,62 +90,100 @@
 }
 
 #check:checked ~ .contain-li {
-    top: 0;
+    left: 0;
+    z-index: 50;
 }
 
 
 @media only screen and (min-width:768px) and (max-width:1023px){
 
-    .contain-header .name-header {
-        font-size: 3em;
+    .header {
+        width: 48em;
+        height: 3.2em;
     }
 
+    .header .contain-header {
+        width: 100%;
+        height: 100%;
+    }
+
+    .header .contain-header .ul__flex {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-end;
+        width: 100%;
+        height: 2.255em;
+    }
+
+    /* .contain-header .name-header {
+        font-size: 3em;
+    } */
+
     .ul__flex .checkbtn {
-        font-size: 2em;
+        width: 100%;
+        padding: 1.4px 0.4em 0 17em;
+        font-size: 1.9em;
+        background: linear-gradient(-45deg, #6930C3, #64DFDF, #252525);
+    }
+
+    .ul__flex .checkbtn .fa-angle-right {
+        display: none;
+    }
+
+    .ul__flex .checkbtn .fa-bars {
+        display: inline-block;
     }
 
     .ul__flex .contain-li {
-        height: 93vh;
-        margin: 1em 0;
-        padding: 1em 0;
+        width: 34.9em;
+        height: 34em;
+        left: 0;
+        top: -1000px;
     }
 
     .contain-li .li__flex {
-        padding: 1em 1em;
-        margin: 2em 1em;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        margin: 0.8em;
+        padding: 0.7em;
+    }
+
+    #check:checked ~ .contain-li {
+        top: 0;
     }
 
 }
 
 @media only screen and (min-width:1024px) and (max-width:1439px) {
-    .header {
+
+    .contain-header {
         display: none;
+    }
+
+    .header {
+        width: 100%;
+        height: 3.6em;
+        position: fixed;
     }
 
     .header-desktop {
         display: block;
         position: fixed;
-        width: 100vw;
-        height: 7vh;
+        width: 100%;
+        height: 3.6em;
         background: linear-gradient(-45deg, #6930C3, #64DFDF, #252525);
     }
 
-    .nav__header-desktop {
-        width: 100%;
+    .header-desktop .nav__header-desktop {
         height: 100%;
     }
 
-    .nav__header-desktop .flex__container-header {
+    .header-desktop .nav__header-desktop .flex__container-header {
+        height: 100%;
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
-    }
-
-    .flex__container-header .li__flex-item {
-        font-size: 1em;
+        align-items: center;
         font-family: var(--averia);
-        padding: 1em;
     }
-
 }

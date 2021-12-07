@@ -1,5 +1,10 @@
+.footer-section {
+    width: 90%;
+    margin: 0 0 0 2.01em;
+}
+
 .footer-flex {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -32,9 +37,11 @@
 }
 
 .footer__information article ul li {
+    width: max-content;
+    display: inline-block;
     color: #fff;
-    padding: 5px 5px;
-    margin: 5px 24px;
+    padding: .5em 1em;
+    margin: 0 1.4em;
 }
 
 .footer__information article ul li a {
@@ -71,6 +78,10 @@
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     
+    .footer-section {
+        width: 100%;
+        margin: 0;
+    }
     .footer-flex {
         flex-direction: row;
         flex-wrap: wrap;
@@ -84,6 +95,11 @@
         border-bottom: none;
     }
 
+    .footer__information article ul {
+        display: inline-block;
+        width: 12em;
+    }
+
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
@@ -92,7 +108,7 @@
     }
 
     .footer__information {
-        width: 50%;
+        width: 32em;
     }
 
     .footer__information article {
@@ -104,7 +120,7 @@
 
     .footer__information article ul {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
     }
 

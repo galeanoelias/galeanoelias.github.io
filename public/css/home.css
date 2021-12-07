@@ -1,0 +1,74 @@
+.about-me {
+    width: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background: #aba;
+    margin: 0 0 0 2em;
+}
+
+.about-me .img {
+    width: 92%;
+    height: 100%;
+    margin: 1em 0;
+}
+
+.about-me .img img {
+    clip-path: circle(50% at 50% 50%);
+    margin: 5px 0;
+}
+
+.about-me .information {
+    width: 92%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 1em 0 2em;
+}
+
+.information .title {
+    display: inline-block;
+}
+
+.information .title .aboutme-title {
+    font-family: var(--noto);
+    font-weight: bold;
+    color: var(--lightblack);
+}
+
+.information .presentation .paragraph {
+    text-align: center;
+    color: var(--lightblack);
+    font-family: var(--averia);
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    
+    .about-me {
+        width: 100%;
+        padding: 3em 0;
+        margin: 0;
+    }
+
+    .about-me .img {
+        width: 35%;
+        margin: 0;
+    }
+
+}
+
+@media only screen and (min-width:1024px) and (max-width:1440px) {
+    
+    .about-me {
+        padding: 5em 0
+    }
+
+    .about-me .img {
+        width: 26%;
+    }
+
+    .information .presentation .paragraph {
+        padding: 1em;
+    }
+
+}
